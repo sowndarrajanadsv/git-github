@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loaders</title>
+</head>
+<body>
+    <div class="loader"></div>
+    <style>
+        .loader{
+            border: 20px solid green;
+            width: 50px;
+            height:50px;
+            border-radius: 50%;
+            animation-name: load;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            margin-left: 40%;
+            margin-top: 10%;
+        }
+
+        @keyframes load {
+            0%{
+                transform: scale(0);
+            }
+
+            100%{
+                opacity: 0;
+            }
+        }
+    </style>
+</body>
+</html>
